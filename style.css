@@ -3,11 +3,21 @@
     src: url(Seven\ Segment.ttf);
 }
 
+@media screen and (min-width: 900px) {
+    .compteur {
+        font-size: 8em !important;
+    }
+
+    .compteur span:not(.dp) {
+        width: 150px !important;
+    }
+}
+
 body {
     margin: 0;
     font-family: "Montserrat";
     height: 100vh;
-    background: rgb(16, 16, 16);
+    background: rgb(15, 15, 18);
     color: white;
     display: flex;
     align-items: center;
@@ -16,14 +26,54 @@ body {
 
 .compteur {
     font-family: "Seven Segments";
-    font-size: 9em;
+    font-size: 4em;
     text-align: center;
 }
 
 .compteur span {
     display: inline-block;
+    animation: flicker 1.5s infinite alternate;
 }
 
 .compteur span:not(.dp) {
-    width: 150px;
+    width: 75px;
+}
+
+.heures {
+    text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 42px red,
+        0 0 82px red;
+}
+
+.minutes {
+    text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 42px green,
+        0 0 82px green;
+}
+
+.secondes {
+    text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 42px blue,
+        0 0 82px blue;
+}
+
+.dp {
+    text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 42px rgb(255, 255, 255),
+        0 0 82px rgb(255, 255, 255),
+        0 0 92px rgb(255, 255, 255),
+        0 0 102px rgb(255, 255, 255),
+        0 0 151px rgb(255, 255, 255);
 }
