@@ -1,0 +1,29 @@
+@font-face {
+    font-family: "Seven Segments";
+    src: url(Seven\ Segment.ttf);
+}
+
+body {
+    margin: 0;
+    font-family: "Montserrat";
+    height: 100vh;
+    background: rgb(16, 16, 16);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.compteur {
+    font-family: "Seven Segments";
+    font-size: 9em;
+    text-align: center;
+}
+
+.compteur span {
+    display: inline-block;
+}
+
+.compteur span:not(.dp) {
+    width: 150px;
+}
