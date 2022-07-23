@@ -11,6 +11,10 @@
     .compteur span:not(.dp) {
         width: 150px !important;
     }
+
+    .dp {
+        margin: 0 -30px !important;
+    }
 }
 
 body {
@@ -32,7 +36,6 @@ body {
 
 .compteur span {
     display: inline-block;
-    animation: flicker 1.5s infinite alternate;
 }
 
 .compteur span:not(.dp) {
@@ -67,6 +70,7 @@ body {
 }
 
 .dp {
+    margin: 0 -20px;
     text-shadow:
         0 0 7px #fff,
         0 0 10px #fff,
