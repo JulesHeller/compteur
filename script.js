@@ -1,4 +1,4 @@
-let date = new Date(2022, 6, 23, 9, 30, 0);
+let date = new Date(2022, 7, 31, 10, 30, 0);
 
 setInterval(compteur, 1000);
 
